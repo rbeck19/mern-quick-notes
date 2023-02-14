@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom"
 import NewOrderPage from "../NewOrderPage/NewOrderPage";
 import AuthPage from "../AuthPage/AuthPage"
 import OrderHistoryPage from "../OrderHistoryPage/OrderHistoryPage";
+import NotesPage from "../NotesPage/NotesPage"
 import NavBar from "../../components/NavBar/NavBar";
 import './App.css';
 
@@ -23,6 +24,7 @@ export default function App() {
           <Routes >
             <Route path="/orders/new" element={<NewOrderPage />} />
             <Route path="/orders" element={<OrderHistoryPage />} />
+            <Route path="/notes" element={<NotesPage />} />
           </Routes> 
         </> 
         :
